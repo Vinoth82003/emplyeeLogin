@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.admin-container{
+    position: absolute;
+    width: 100vw; 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.header{
+    position: absolute;
+    top: 0;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.sidemenu-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+
+.sidemenu{
+    width: 200px;
+    background: #0E2954;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.menulist{
+    padding: 10px;
+    background: #fff;
+    margin-top: 20px;
+    width: 90%;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.menulist.active{
+    background: #1F6E8C;
+    color: #ffffff;
+}
+
+.menulist:hover{
+    background: #1F6E8C;
+    color: #ffffff;
+}
+
+.logout{
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.employeeTable{
+    position: absolute;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 150px;
+    margin-left: 70px;
+}
+
+.btns{
+    display: flex;
+    gap: 10px;
+}
+
+.editInput{
+    width: 70%;
+    position: absolute;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    top: -80px;
+    margin-left: 150px;
+    transition: all 1s ease ;
+}
+
+
+.editInput.active{
+    top: 80px;
+}
+
+.editform{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px; 
+}
+
+select{
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #000;  
+}
+
+input{
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #000;
+}
+
+.editbtn{
+    padding: 7px 14px;
+    background: #1F6E8C;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+@media screen and (max-width:769px) {
+    .admin-container{
+        overflow-x: visible;
+    }
+    .employeeTable{
+        width: 350px;
+        left: 50px;
+    }
+   .sidemenu{
+    width: 50px;
+   }
+   .text{
+    display: none;
+   }
+}
